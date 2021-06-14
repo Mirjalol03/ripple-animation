@@ -1,0 +1,58 @@
+body{
+  background: #EEF2F7;
+}
+/* Just to center the button, not really important but
+make sure you define the button's position*/
+.btn{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.btn{
+  background: linear-gradient(90deg, #be2edd, #5f27cd);
+  font-size: 30px;
+  color: #fff;
+  padding: 10px 45px;
+  border: none;
+  border-radius: 25px;
+  /* box-shadow: rgba(0, 0, 0, 0.25) 1px 2px 2px; */
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+
+
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+}
+.btn .btn-ripple{
+  background: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  border-radius: 100%;
+  animation: ripple 2s;
+  transform: scale(0);
+}
+
+
+
+@media (max-width: 800px) {
+  .btn{
+    font-size: 60px;
+  }
+}
+
+
+@keyframes ripple {
+  100%{
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+
